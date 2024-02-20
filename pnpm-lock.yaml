@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@airbadge/sveltekit':
-    specifier: ^0.0.3
-    version: 0.0.3(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3)
+    specifier: ^0.0.4
+    version: 0.0.4(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3)
   '@auth/core':
     specifier: ^0.27.0
     version: 0.27.0
@@ -61,8 +61,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@airbadge/sveltekit@0.0.3(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3):
-    resolution: {integrity: sha512-NDV39q3aT6OO4a+FOVXQz1mJv5Sfmv7zjc9vemLIEW0ztZyRKd9OnVBvrFF/680ZLtVCP/vVWhJRKiDfFYoRMg==}
+  /@airbadge/sveltekit@0.0.4(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3):
+    resolution: {integrity: sha512-7qPi2/CD8zNN+QHjyPEKuTK2UaMMeQUdABfo7LisQLAcRtiSpAwPqWYOiyKzTKs6VnKT2L8Hh10GfGjiQs7ZZg==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:

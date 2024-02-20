@@ -10,7 +10,7 @@ import { PrismaAdapter } from '@auth/prisma-adapter'
 import { PrismaClient } from '@prisma/client'
 
 // import env vars for OAuth client
-import { env } from '$env/dynamic/private'
+import { BASIC_PRICE_ID, PRO_PRICE_ID, GITHUB_ID, GITHUB_SECRET } from '$env/static/private'
 
 // init database client
 const db = new PrismaClient()
@@ -21,14 +21,14 @@ export const handle = SvelteKitAuth({
   adapter: PrismaAdapter(db),
   providers: [
     GitHub({
-      clientId: env.GITHUB_ID,
-      clientSecret: env.GITHUB_SECRET
+      clientId: GITHUB_ID,
+      clientSecret: GITHUB_SECRET
     })
   ],
 
   // configure list of plans.
   plans: [
-    { id: 'basic', name: 'Basic', price: 1000, priceId: env.BASIC_PRICE_ID, default: true },
-    { id: 'pro', name: 'Pro', price: 2500, priceId: env.PRO_PRICE_ID }
+    { id: 'basic', name: 'Basic', price: 1000, priceId: BASIC_PRICE_ID, default: true },
+    { id: 'pro', name: 'Pro', price: 2500, priceId: PRO_PRICE_ID }
   ]
 })
