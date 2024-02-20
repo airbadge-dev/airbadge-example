@@ -4,11 +4,12 @@
 
 <h1>AirBadge Example App</h1>
 
-<a href="/pricing">Pricing</a>
-<a href="/auth/signin">Signin</a>
-
-<pre>session = {JSON.stringify(data.session, null, 2)}</pre>
-
 {#if data.session}
   <a href="/billing/portal">Billing portal</a>
+  <a href="/auth/signout">Signout</a>
+{:else}
+  <a href="/pricing">Pricing</a>
+  <a href="/auth/signin">Signin</a>
 {/if}
+
+<pre>session = {JSON.stringify(data.session, null, 2)}</pre>
