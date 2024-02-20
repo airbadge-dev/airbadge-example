@@ -11,7 +11,7 @@
     "postinstall": "prisma generate"
   },
   "devDependencies": {
-    "@airbadge/sveltekit": "^0.0.4",
+    "@airbadge/sveltekit": "^0.0.5",
     "@auth/core": "^0.27.0",
     "@auth/prisma-adapter": "^1.4.0",
     "@prisma/client": "^5.9.1",
