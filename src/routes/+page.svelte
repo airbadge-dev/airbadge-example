@@ -5,6 +5,7 @@
 <h1>AirBadge Example App</h1>
 
 <a href="/pricing">Pricing</a>
+<a href="/auth/signin">Signin</a>
 
 <pre>session = {JSON.stringify(data.session, null, 2)}</pre>
 
