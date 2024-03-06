@@ -7,7 +7,9 @@
 {#each data.plans as plan}
   <section>
     <h2>{plan.name}</h2>
-    <p>Price: { (plan.price/100).toLocaleString('en-US', { style: 'currency', currency: 'usd'}) }</p>
+    <p>
+      Price: {(plan.price / 100).toLocaleString('en-US', { style: 'currency', currency: 'usd' })}
+    </p>
     <a href="/billing/checkout?plan={plan.id}">Sign up</a>
   </section>
 {/each}
