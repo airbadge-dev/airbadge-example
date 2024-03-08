@@ -15,7 +15,6 @@
     "@auth/core": "^0.27.0",
     "@auth/prisma-adapter": "^1.4.0",
     "@prisma/client": "^5.9.1",
-    "@sentry/utils": "^7.105.0",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
@@ -31,6 +30,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@sentry/sveltekit": "^7.105.0"
+    "@sentry/sveltekit": "^7.105.0",
+    "@sentry/utils": "^7.105.0"
   }
 }
