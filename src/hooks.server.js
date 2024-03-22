@@ -16,6 +16,7 @@ import { BASIC_PRICE_ID, PRO_PRICE_ID, GITHUB_ID, GITHUB_SECRET } from '$env/sta
 
 Sentry.init({
   dsn: 'https://675b8cd6559a5a4806ea76b1d32ff1d3@o4506863366832128.ingest.us.sentry.io/4506863375220736',
+  enableTracing: false,
   tracesSampleRate: 1
 })
 
