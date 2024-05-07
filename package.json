@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "vite dev",
+    "dev": "concurrently --names 'DEV,STRIPE' -c 'bgBlue.bold,bgMagenta.bold' 'vite dev' 'npm run stripe:listen'",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "stripe:listen": "stripe listen --forward-to localhost:5173/billing/webhooks"
   },
   "devDependencies": {
     "@airbadge/sveltekit": "^0.0.5",
@@ -19,6 +20,7 @@
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@types/eslint": "8.56.0",
+    "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.35.1",
