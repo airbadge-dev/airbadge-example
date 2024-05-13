@@ -4,16 +4,16 @@
 
 <h1>Pricing</h1>
 
-{#each data.plans as plan}
+{#each data.products as product}
   <section>
-    <h2>{plan.name}</h2>
+    <h2>{product.name}</h2>
     <p>
-      Price: {(plan.price / 100).toLocaleString('en-US', { style: 'currency', currency: 'usd' })}
+      Price: {((product.default_price?.unit_amount || 0) / 100).toLocaleString('en-US', { style: 'currency', currency: 'usd' })}
     </p>
-    <a href="/billing/checkout?plan={plan.id}">Sign up</a>
+    <a href="/billing/checkout?id={product.default_price?.id}">Sign up</a>
   </section>
 {/each}
 
 <h2>Debug</h2>
 
-<pre>plans = {JSON.stringify(data.plans, null, 2)}</pre>
+<pre>products = {JSON.stringify(data.products, null, 2)}</pre>

@@ -12,7 +12,7 @@ import { PrismaAdapter } from '@auth/prisma-adapter'
 import { PrismaClient } from '@prisma/client'
 
 // import env vars for OAuth client
-import { BASIC_PRICE_ID, PRO_PRICE_ID, GITHUB_ID, GITHUB_SECRET } from '$env/static/private'
+import { GITHUB_ID, GITHUB_SECRET } from '$env/static/private'
 
 Sentry.init({
   dsn: 'https://675b8cd6559a5a4806ea76b1d32ff1d3@o4506863366832128.ingest.us.sentry.io/4506863375220736',
@@ -36,11 +36,6 @@ export const handle = sequence(
       })
     ],
 
-    // configure list of plans.
-    plans: [
-      { id: 'basic', name: 'Basic', price: 1000, priceId: BASIC_PRICE_ID, default: true },
-      { id: 'pro', name: 'Pro', price: 2500, priceId: PRO_PRICE_ID }
-    ]
   })
 )
 export const handleError = Sentry.handleErrorWithSentry()
