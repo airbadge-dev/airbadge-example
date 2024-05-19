@@ -10,7 +10,13 @@
     <p>
       Price: {((product.default_price?.unit_amount || 0) / 100).toLocaleString('en-US', { style: 'currency', currency: 'usd' })}
     </p>
-    <a href="/billing/checkout?id={product.default_price?.id}">Sign up</a>
+    <a href="/billing/checkout?id={product.default_price?.id}">
+      {#if product.default_price?.type == 'recurring'}
+        Subscribe
+      {:else}
+        Buy now
+      {/if}
+    </a>
   </section>
 {/each}
 
