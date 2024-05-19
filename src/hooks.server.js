@@ -24,7 +24,8 @@ const db = new PrismaClient()
 // API is similar to Auth.js
 const { handle: handleAuth } = SvelteKitAuth({
   adapter: PrismaAdapter(db),
-  providers: [ GitHub ]
+  providers: [ GitHub ],
+  trustHost: true
 })
 
 export const handle = sequence(
