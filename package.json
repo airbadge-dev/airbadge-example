@@ -12,9 +12,10 @@
     "stripe:listen": "stripe listen --forward-to localhost:5173/billing/webhooks"
   },
   "devDependencies": {
+    "@airbadge/cli": "^0.0.1",
     "@airbadge/sveltekit": "^0.0.7",
-    "@auth/sveltekit": "^1.1.0",
     "@auth/prisma-adapter": "^2.1.0",
+    "@auth/sveltekit": "^1.1.0",
     "@prisma/client": "^5.9.1",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/kit": "^2.0.0",

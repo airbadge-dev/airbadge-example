@@ -13,6 +13,9 @@ dependencies:
     version: 7.105.0
 
 devDependencies:
+  '@airbadge/cli':
+    specifier: ^0.0.1
+    version: 0.0.1
   '@airbadge/sveltekit':
     specifier: ^0.0.7
     version: 0.0.7(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3)
@@ -73,6 +76,15 @@ packages:
   /@aashutoshrathi/word-wrap@1.2.6:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /@airbadge/cli@0.0.1:
+    resolution: {integrity: sha512-0RzNBtiMXJjbfvMGDtU2AQG6u/jTDKW01W529CRavq4TuG1xo96w4tWIVFtXVjds5W/z25yYArh3Ma1HWtlNhw==}
+    hasBin: true
+    dependencies:
+      '@iarna/toml': 2.2.5
+      envfile: 7.1.0
+      sade: 1.8.1
     dev: true
 
   /@airbadge/sveltekit@0.0.7(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3):
@@ -452,6 +464,10 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    dev: true
+
+  /@iarna/toml@2.2.5:
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -1284,6 +1300,12 @@ packages:
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
+    dev: true
+
+  /envfile@7.1.0:
+    resolution: {integrity: sha512-dyH4QnnZsArCLhPASr29eqBWDvKpq0GggQFTmysTT/S9TTmt1JrEKNvTBc09Cd7ujVZQful2HBGRMe2agu7Krg==}
+    engines: {node: '>=8'}
+    hasBin: true
     dev: true
 
   /es-define-property@1.0.0:
