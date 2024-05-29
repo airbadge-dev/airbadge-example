@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@airbadge/cli": "^0.0.1",
-    "@airbadge/sveltekit": "^0.0.7",
+    "@airbadge/sveltekit": "^0.0.10",
     "@auth/prisma-adapter": "^2.1.0",
     "@auth/sveltekit": "^1.1.0",
     "@prisma/client": "^5.9.1",

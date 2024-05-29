@@ -17,8 +17,8 @@ devDependencies:
     specifier: ^0.0.1
     version: 0.0.1
   '@airbadge/sveltekit':
-    specifier: ^0.0.7
-    version: 0.0.7(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3)
+    specifier: ^0.0.10
+    version: 0.0.10(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3)
   '@auth/prisma-adapter':
     specifier: ^2.1.0
     version: 2.1.0(@prisma/client@5.9.1)
@@ -87,8 +87,8 @@ packages:
       sade: 1.8.1
     dev: true
 
-  /@airbadge/sveltekit@0.0.7(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3):
-    resolution: {integrity: sha512-aRIfDWnuO6kV/gFo4nxh8N9hZk6jm6KEuCLe1zE3AEp7zpsQaFJdtfnP2eXUP7pEzu/V4yMnK234bWTqekztSQ==}
+  /@airbadge/sveltekit@0.0.10(@sveltejs/vite-plugin-svelte@3.0.0)(svelte@4.2.7)(vite@5.0.3):
+    resolution: {integrity: sha512-Q7AqqOK2i3ZRMZ/Cc1B7h3gq2s3gfyOmdHNnJRNYXFvTaBHs3fdGuiIfrJ4aNM0YgAdx5vQllKGgBY0hFco7Aw==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
