@@ -9,11 +9,13 @@
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
     "postinstall": "prisma generate",
-    "stripe:listen": "stripe listen --forward-to localhost:5173/billing/webhooks"
+    "stripe:listen": "stripe listen --forward-to localhost:5173/billing/webhooks",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
     "@airbadge/cli": "^0.0.1",
-    "@airbadge/sveltekit": "^0.0.10",
+    "@airbadge/sveltekit": "^0.0.11",
     "@auth/prisma-adapter": "^2.1.0",
     "@auth/sveltekit": "^1.1.0",
     "@prisma/client": "^5.9.1",
@@ -30,7 +32,11 @@
     "prisma": "^5.9.1",
     "stripe": "^15.6.0",
     "svelte": "^4.2.7",
-    "vite": "^5.0.3"
+    "svelte-check": "^3.8.0",
+    "tslib": "^2.6.3",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.13.0",
+    "vite": "^4.5.3"
   },
   "type": "module",
   "dependencies": {
