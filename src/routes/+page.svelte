@@ -4,7 +4,7 @@
 
 <h1>AirBadge Example App</h1>
 
-{#if data.session?.subscription?.status != 'canceled'}
+{#if data.session?.subscription && data.session?.subscription.status != 'canceled'}
   <a href="/billing/portal">Billing portal</a>
 {:else}
   <a href="/pricing">Pricing</a>
