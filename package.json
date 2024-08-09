@@ -40,7 +40,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@sentry/sveltekit": "^7.105.0",
-    "@sentry/utils": "^7.105.0"
+    "@sentry/sveltekit": "^7.118.0",
+    "@sentry/utils": "^7.118.0"
   }
 }
