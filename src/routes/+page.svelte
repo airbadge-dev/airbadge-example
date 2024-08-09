@@ -4,14 +4,16 @@
 
 <h1>AirBadge Example App</h1>
 
+{#if data.session?.subscription}
+  <a href="/billing/portal">Billing portal</a>
+{:else}
+  <a href="/pricing">Pricing</a>
+{/if}
+
 {#if data.session}
-  {#if data.session.subscription}
-    <a href="/billing/portal">Billing portal</a>
-  {/if}
 
   <a href="/auth/signout">Signout</a>
 {:else}
-  <a href="/pricing">Pricing</a>
   <a href="/auth/signin">Signin</a>
 {/if}
 
